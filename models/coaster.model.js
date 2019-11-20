@@ -8,7 +8,7 @@ const coasterSchema = new Schema(
         inversions:	Number,
         length:		Number,
         active:		Boolean,
-        park:		[{type: Schema.Types.ObjectId, ref: "Park"}]
+        park:		{type: Schema.Types.ObjectId, ref: "Park"}
     },
     {
       timestamps: true
